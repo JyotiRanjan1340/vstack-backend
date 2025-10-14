@@ -1,0 +1,4 @@
+fastapi
+uvicorn
+sqlalchemy
+# Add any other dependencies your project needs, one per line
