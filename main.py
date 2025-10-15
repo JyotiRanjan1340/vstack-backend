@@ -14,10 +14,11 @@ app = FastAPI(
     version="1.0.0"
 )
 
-# CORS settings (allow all for dev; restrict in prod)
+from fastapi.middleware.cors import CORSMiddleware
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=["https://www.vstack.in"],  # Only allow your web app!
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
